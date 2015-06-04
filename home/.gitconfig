@@ -6,7 +6,7 @@
 [color]
     ui = 1
 [core]
-    excludesfile = /Users/ct/.gitignore_global
+    excludesfile = ~/.gitignore_global
     editor = subl
 [push]
     default = simple
@@ -16,11 +16,3 @@
     required = true
     clean = git media clean %f
     smudge = git media smudge %f
-[init]
-    templatedir = ~/.git_template
-[difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
-[mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true
