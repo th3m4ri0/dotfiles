@@ -1,11 +1,25 @@
 # dotfiles
+## Finally, I put my dotfiles on Github !
 
-### Usage
-- ```gem install homesick```
-- ```homesick clone th3m4ri0/dotfiles```
-- ```homesick symlink dotfiles```
-- ```homesick exec dotfiles chmod+x install.sh```
-- ```homesick exec dotfiles ./install.sh```    
+### What you get :
+- git
+- rbenv + ruby 2.2.2
+- node + npm
+- [fish shell](http://fishshell.com/)
+- [oh-my-fish](//github.com/oh-my-fish/oh-my-fish) framework
+- Some custom functions like be (bundle exec), etc.
+
+### Installation
+```
+gem install homesick
+homesick clone th3m4ri0/dotfiles
+homesick symlink dotfiles
+homesick exec dotfiles chmod+x install.sh
+homesick exec dotfiles ./install.sh
+```
+
+### What it looks like
+![Screenshot](images/screenshot.png)
 
 ### Adding stuff
 - ```homesick track [~/.file] dotfiles```
