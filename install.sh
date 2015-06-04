@@ -111,6 +111,8 @@ fi
 # Oh-my-fish
 if directory_exists ~/.oh-my-fish ;then
     echo_step "🐟  Oh-my-fish is already installed."
+    echo_step "🐠  Updating oh-my-fish."
+    git --git-dir ~/.oh-my-fish pull origin master
 else
     echo_step "🐟  Installing oh-my-fish."
     git clone git://github.com/bpinto/oh-my-fish.git ~/.oh-my-fish
