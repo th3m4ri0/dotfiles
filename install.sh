@@ -24,7 +24,7 @@ fi
 # Ubuntu specific packages
 if is_ubuntu ;then
     echo_step "Installing Ubuntu specific packages."
-    sudo apt-get update -y
+    sudo apt-get update -y > /dev/null
     sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev -y
 fi
 
