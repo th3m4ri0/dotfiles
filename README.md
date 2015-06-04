@@ -1,7 +1,7 @@
 # dotfiles
 ## Finally, I put my dotfiles on Github !
 
-### What you get :
+### What you get
 - git
 - rbenv + ruby 2.2.2
 - node + npm
