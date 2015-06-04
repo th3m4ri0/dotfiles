@@ -3,7 +3,7 @@
 ### Usage
 - ```gem install homesick```
 - ```homesick clone th3m4ri0/dotfiles```
-- ```homesick symlink th3m4ri0/dotfiles```
+- ```homesick symlink dotfiles```
 - ```homesick exec dotfiles chmod+x install.sh```
 - ```homesick exec dotfiles ./install.sh```    
 
