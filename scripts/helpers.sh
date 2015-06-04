@@ -6,7 +6,7 @@ is_ubuntu () {
 }
 
 is_osx () {
-    [[ "$OSTYPE" == "darwin"* ]];
+   [ "$OSTYPE" = "darwin"* ];
 }
 
 

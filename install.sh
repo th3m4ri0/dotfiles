@@ -83,6 +83,17 @@ else
     fi
 fi
 
+# npm install -g without sudo
+
+if is_ubuntu ;then
+    if directory_exists ~/.npm-packages ;then
+        echo_step "npm install -g without sudo already setup."
+    else 
+        echo_step "Setting up npm install -g without sudo."
+        mkdir "~/.npm-packages"
+    fi
+fi
+
 # Homesick
 if command_exists homesick ;then
     echo_step "🏰  Homesick is already installed."
