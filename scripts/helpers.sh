@@ -18,7 +18,7 @@ directory_exists () {
 }
 
 command_exists () {
-    type "$1" &> /dev/null ;
+    which "$1" >/dev/null ;
 }
 
 
