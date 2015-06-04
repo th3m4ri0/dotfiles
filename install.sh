@@ -5,7 +5,7 @@ set -e
 scripts=${0%/*}/scripts
 ruby_version=2.2.2
 
-source "${scripts}/helpers.sh"
+. "${scripts}/helpers.sh"
 
 # Compatibility check
 if [ ! is_osx ] && [ ! is_ubuntu ] ;then
