@@ -16,7 +16,14 @@ Plugin "vundle"
 
 # Custom stuff
 set --erase fish_greeting
-. /usr/local/opt/autojump/share/autojump/autojump.fish
+switch (uname)
+    # Linux
+    case Linux
+        . /usr/share/autojump/autojump.fish
+    # Mac OS
+    case Darwin
+        . (brew --prefix autojump)/share/autojump/autojump.fish
+end
 function be 
     bundle exec $argv
 end
