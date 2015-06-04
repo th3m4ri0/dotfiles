@@ -114,7 +114,7 @@ if directory_exists ~/.oh-my-fish ;then
 else
     echo_step "🐟  Installing oh-my-fish."
     git clone git://github.com/bpinto/oh-my-fish.git ~/.oh-my-fish
-    fish -c omf
+    fish -c omf install
 fi
 
 echo_step "🍸  Everything installed properly ! Congrats !"
