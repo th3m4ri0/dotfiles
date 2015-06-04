@@ -102,6 +102,18 @@ else
     gem install homesick
 fi
 
+# Autojump
+if command_exists autojump ;then
+    echo_step "Autojump is already installed."
+else
+    echo_step "Installing autojump."
+    if is_osx ;then
+        brew install autojump
+    elif is_ubuntu ;then
+        sudo apt-get install autojump -y
+    fi
+fi
+
 # Fish shell
 if command_exists fish ;then
     echo_step "🐠  Fish shell already installed."
