@@ -102,7 +102,7 @@ else
         chsh -s /usr/local/bin/fish
     elif is_ubuntu ;then
         sudo apt-add-repository ppa:fish-shell/release-2 -y
-        sudo apt-get update -y
+        sudo apt-get update -y > /dev/null
         sudo apt-get install fish -y
         chsh -s /usr/bin/fish
     fi
