@@ -71,6 +71,15 @@ else
     rbenv global $ruby_version
 fi
 
+# Bundle
+if command_exists bundle ;then
+    echo_step "Bundler is already installed."
+else
+    echo_step "Installing brew."
+    gem install brew
+    rbenv rehash
+fi
+
 # Node JS npm
 if command_exists node ;then
     echo_step "Node.JS already installed."
