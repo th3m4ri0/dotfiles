@@ -103,6 +103,26 @@ if is_ubuntu ;then
     fi
 fi
 
+# Heroku CLI
+if command_exists heroku ;then 
+    echo_step "Heroku CLI is already installed."
+else
+    echo_step "Installing Heroku CLI."
+    if is_osx; then
+        brew install heroku-toolbelt
+    else
+        wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+    fi
+fi
+
+# AWS CLI
+if command_exists aws ;then
+    echo_step "AWS CLI is already installed"
+else
+    echo_step "Installing AWS CLI."
+    pip install awscli
+fi
+
 # Homesick
 if command_exists homesick ;then
     echo_step "🏰  Homesick is already installed."
