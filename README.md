@@ -3,8 +3,12 @@
 
 ### What you get
 - git
-- rbenv + ruby 2.2.2
+- brew
+- rbenv + ruby 2.2.2 + bundle
 - node + npm
+- heroku-toolbelt
+- awscli
+- autojump
 - [fish shell](http://fishshell.com/)
 - [oh-my-fish](//github.com/oh-my-fish/oh-my-fish) framework
 - Some custom functions like be (bundle exec), etc.
