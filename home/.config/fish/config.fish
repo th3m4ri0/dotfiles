@@ -23,6 +23,10 @@ switch (uname)
     # Mac OS
     case Darwin
         . (brew --prefix autojump)/share/autojump/autojump.fish
+        # Docker
+        set -x DOCKER_CERT_PATH ~/.boot2docker/certs/boot2docker-vm
+        set -x DOCKER_TLS_VERIFY 1
+        set -x DOCKER_HOST tcp://192.168.59.103:2376
 end
 function be 
     bundle exec $argv
