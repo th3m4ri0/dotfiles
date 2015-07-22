@@ -75,8 +75,17 @@ fi
 if command_exists bundle ;then
     echo_step "Bundler is already installed."
 else
-    echo_step "Installing brew."
-    gem install brew
+    echo_step "Installing bundle."
+    gem install bundle
+    rbenv rehash
+fi
+
+# Pry
+if command_exists pry ;then
+    echo_step "Pry is already installed."
+else
+    echo_step "Installing pry."
+    gem install pry
     rbenv rehash
 fi
 

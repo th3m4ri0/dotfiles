@@ -4,7 +4,7 @@
 ### What you get
 - git
 - brew
-- rbenv + ruby 2.2.2 + bundle
+- rbenv + ruby 2.2.2 + bundle + pry
 - node + npm
 - heroku-toolbelt
 - awscli
