@@ -27,6 +27,9 @@ switch (uname)
         set -x DOCKER_CERT_PATH ~/.boot2docker/certs/boot2docker-vm
         set -x DOCKER_TLS_VERIFY 1
         set -x DOCKER_HOST tcp://192.168.59.103:2376
+
+        # Sublime Text
+        set -Ux EDITOR subl
 end
 function be 
     bundle exec $argv
