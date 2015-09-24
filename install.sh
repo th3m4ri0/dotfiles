@@ -75,7 +75,7 @@ elif is_ubuntu ;then
         echo_step "Ruby-build is already installed."
     else
         echo_step "Installing ruby-build."
-        sudo apt-get install ruby-build
+        git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
     fi
 fi
 
