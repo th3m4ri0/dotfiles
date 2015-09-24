@@ -62,16 +62,23 @@ else
     fi
 fi
 
-if command_exists ruby-build ;then
-    echo_step "Ruby-build is already installed."
-else
-    echo_step "Installing ruby-build."
-    if is_osx ;then
+# Ruby-build
+if is_osx ;then
+    if command_exists ruby-build ;then
+        echo_step "Ruby-build is already installed."
+    else
+        echo_step "Installing ruby-build."
         brew install ruby-build
-    elif is_ubuntu ;then
+    fi
+elif is_ubuntu ;then
+    if directory_exists ~/.rbenv/plugins/ruby-build
+        echo_step "Ruby-build is already installed."
+    else
+        echo_step "Installing ruby-build."
         sudo apt-get install ruby-build
     fi
 fi
+
 
 # Rbenv version
 if rbenv versions |grep -q $ruby_version ;then
