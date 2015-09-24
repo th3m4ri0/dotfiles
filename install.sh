@@ -128,7 +128,7 @@ if is_ubuntu ;then
         echo_step "npm install -g without sudo already setup."
     else 
         echo_step "Setting up npm install -g without sudo."
-        mkdir "~/.npm-packages"
+        mkdir ~/.npm-packages
     fi
 fi
 
