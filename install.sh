@@ -59,6 +59,8 @@ else
         brew install rbenv
     elif is_ubuntu ;then
         sudo apt-get install rbenv
+        echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+        echo 'eval "$(rbenv init -)"' >> ~/.bashrc
     fi
 fi
 
