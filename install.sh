@@ -58,7 +58,18 @@ else
     if is_osx ;then
         brew install rbenv
     elif is_ubuntu ;then
-        sudo apt-get install rbenv ruby-build
+        sudo apt-get install rbenv
+    fi
+fi
+
+if command_exists ruby-build ;then
+    echo_step "Ruby-build is already installed."
+else
+    echo_step "Installing ruby-build."
+    if is_osx ;then
+        brew install ruby-build
+    elif is_ubuntu ;then
+        sudo apt-get install ruby-build
     fi
 fi
 
