@@ -3,9 +3,10 @@
 
 ### What you get
 - git
-- brew
+- brew (OSX only)
 - rbenv + ruby 2.2.2 + bundle + pry
 - node + npm
+- python + pip
 - heroku-toolbelt
 - awscli
 - autojump
