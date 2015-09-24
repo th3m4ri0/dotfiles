@@ -71,7 +71,7 @@ if is_osx ;then
         brew install ruby-build
     fi
 elif is_ubuntu ;then
-    if directory_exists ~/.rbenv/plugins/ruby-build
+    if directory_exists ~/.rbenv/plugins/ruby-build ;then
         echo_step "Ruby-build is already installed."
     else
         echo_step "Installing ruby-build."
