@@ -161,7 +161,7 @@ if command_exists aws ;then
     echo_step "AWS CLI is already installed"
 else
     echo_step "Installing AWS CLI."
-    pip install awscli
+    sudo pip install awscli
 fi
 
 # Homesick
