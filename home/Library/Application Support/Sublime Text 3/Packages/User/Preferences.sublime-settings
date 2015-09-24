@@ -14,6 +14,5 @@
 	"match_brackets_square": true,
 	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"use_tab_stops": true,
-	// "rulers": [80]
+	"use_tab_stops": true
 }

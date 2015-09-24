@@ -58,7 +58,7 @@ else
     if is_osx ;then
         brew install rbenv
     elif is_ubuntu ;then
-        sudo apt-get install rbenv
+        sudo apt-get install rbenv ruby-build
     fi
 fi
 
