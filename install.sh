@@ -152,7 +152,7 @@ else
     if is_osx; then
         brew install python
     elif is_ubuntu ;then
-        apt-get -y install python-pip
+        sudo apt-get -y install python-pip
     fi
 fi
 
