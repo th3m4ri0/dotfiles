@@ -210,16 +210,7 @@ if directory_exists ~/.oh-my-fish ;then
     cd ~
 else
     echo_step "🐟  Installing oh-my-fish."
-
-    # Due to the ongoing omf drama, omf is at a temporary URL 
-    # https://gitter.im/fishline/fin
-    # https://gitter.im/fish-shell/fish-shell
-    # https://github.com/github/dmca/blob/master/2015-09-22-wahoo.md
-    # https://github.com/wa/wahoo/issues/95#issuecomment-138061127
-    # 
-    # Old URL :
-    # git clone git://github.com/bpinto/oh-my-fish.git ~/.oh-my-fish
-    git clone git://github.com/oh-my-fish/framework.git ~/.oh-my-fish
+    git clone git://github.com/oh-my-fish/oh-my-fish.git ~/.oh-my-fish
 fi
 
 echo_step "Installing oh-my-fish plugins."
