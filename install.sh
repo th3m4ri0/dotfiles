@@ -213,6 +213,13 @@ else
     git clone git://github.com/oh-my-fish/oh-my-fish.git ~/.oh-my-fish
 fi
 
+# Mac OS X preferences
+if is_osx ;then
+    defaults write com.apple.dock autohide-delay -int 0
+    defaults write com.apple.dock autohide-time-modifier -float 0.4
+    killall Dock
+fi
+
 echo_step "Installing oh-my-fish plugins."
 fish -c "omf install"
 
