@@ -1,17 +1,3 @@
-# Path to your oh-my-fish.
-set fish_path $HOME/.oh-my-fish
-
-# Load oh-my-fish configuration.
-. $fish_path/oh-my-fish.fish
-
-# Theme
-Theme "cmorrell.com"
-
-
-Plugin "brew"
-Plugin "rbenv"
-Plugin "theme"
-Plugin "vundle"
 
 
 # Custom stuff

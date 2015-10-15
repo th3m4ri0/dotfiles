@@ -206,15 +206,11 @@ else
 fi
 
 # Oh-my-fish
-if directory_exists ~/.oh-my-fish ;then
+if command_exists omf ;then
     echo_step "🐟  Oh-my-fish is already installed."
-    echo_step "🐠  Updating oh-my-fish."
-    cd ~/.oh-my-fish
-    git pull origin master
-    cd ~
 else
     echo_step "🐟  Installing oh-my-fish."
-    git clone git://github.com/oh-my-fish/oh-my-fish.git ~/.oh-my-fish
+    curl -L github.com/oh-my-fish/oh-my-fish/raw/master/bin/install | fish 
 fi
 
 # Mac OS X preferences
