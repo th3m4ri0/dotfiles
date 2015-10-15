@@ -7,6 +7,10 @@ ruby_version=2.2.2
 
 . "${scripts}/helpers.sh"
 
+sudo -v
+# Keep-alive: update existing `sudo` time stamp until `osx.sh` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
 # Compatibility check
 if [ ! is_osx ] && [ ! is_ubuntu ] ;then
     echo "Sorry, those dotfiles only work on Mac OS and Ubuntu 😐"
