@@ -9,6 +9,9 @@ source $OMF_PATH/init.fish
 
 # Custom stuff
 set --erase fish_greeting
+
+set -x  PATH "/home/ct/.npm-packages/bin" $PATH
+
 switch (uname)
     # Linux
     case Linux
