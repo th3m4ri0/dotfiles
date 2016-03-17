@@ -62,7 +62,7 @@ else
     if is_osx ;then
         brew install rbenv
     elif is_ubuntu ;then
-        sudo apt-get install rbenv
+        git clone https://github.com/rbenv/rbenv.git ~/.rbenv
         echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
         echo 'eval "$(rbenv init -)"' >> ~/.bashrc
     fi
