@@ -220,6 +220,17 @@ if is_osx ;then
     killall Dock
 fi
 
+
+# Oh-my-fish
+if command_exists kwmc ;then
+    echo_step "kwm is already installed."
+else
+    echo_step "Installing kwm."
+    brew install koekeishiya/kwm/kwm
+    echo_step "Starting kwm."
+    brew services start koekeishiya/kwm/kwm
+fi
+
 echo_step "Installing oh-my-fish plugins."
 fish -c "omf install"
 
