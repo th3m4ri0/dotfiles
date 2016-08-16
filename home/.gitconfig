@@ -16,7 +16,7 @@
     required = true
     clean = git media clean %f
     smudge = git media smudge %f
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
+[http "https://git.bank.erwandorgeville.com"]
+	sslCAInfo = /Users/ct/.flynn/ca-certs/default.pem
+[credential "https://git.bank.erwandorgeville.com"]
+	helper = /usr/local/bin/flynn git-credentials
